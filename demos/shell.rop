@@ -1,0 +1,9 @@
+string binbash = "/bin/bash"
+pointer binbash_addr = binbash
+var null = 0
+
+
+syscall execve(binbash, binbash_addr, null)
+
+
+syscall exit(1)

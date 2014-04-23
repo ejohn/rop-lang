@@ -1,0 +1,43 @@
+
+
+
+var max = 0
+var current
+var temp	
+
+array unsorted = [3,5,1,100,4,2]
+pointer ptr1 = unsorted
+
+var count = 0
+var size = 6
+
+
+
+max = *ptr1
+
+
+
+loop
+	
+	current = *ptr1
+	
+	if current > max
+
+		max = current
+
+	endif
+	
+	
+	count = count + 1
+
+	temp = ptr1
+	temp = temp + 4
+	ptr1 = temp
+
+	
+
+while count < size
+
+
+syscall write(1, max, 4)
+syscall exit(1)

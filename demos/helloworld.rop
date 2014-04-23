@@ -1,0 +1,7 @@
+string hw = "hello world"
+var newline = 0x0a
+
+syscall write(1, hw, 11)
+syscall write(1, newline, 4)
+
+syscall exit(1)

@@ -1,0 +1,16 @@
+!python test.py > payload
+
+display /x $eax
+display /x $ebx
+display /x $edx
+display /x $ecx
+display /4xw $esp
+display /5i $pc
+#display/8xw 0x804a080
+display/8xw 0x804bc7c
+#display/8xw 0x804c060
+set disassembly-flavor intel
+
+br *0x0804867c
+r payload
+br *0xf7e2bebd

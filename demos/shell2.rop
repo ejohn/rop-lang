@@ -1,0 +1,13 @@
+libc_base = 0xf7e25000
+mem_addr = 0x0804a040
+
+
+string binbash = "/bin/bash"
+pointer binbash_addr = binbash
+var null = 0
+
+
+syscall execve(binbash, binbash_addr, null)
+
+
+syscall exit(1)

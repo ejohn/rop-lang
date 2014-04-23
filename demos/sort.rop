@@ -1,0 +1,89 @@
+var result = 0
+var temp1
+var temp2
+
+array unsorted = [5,3,9,1,7,4,8,2,0,6]
+
+pointer ptr1 = unsorted
+pointer ptr2 = unsorted
+
+var i = 0
+var j = 0
+var size = 10
+
+
+
+loop
+	
+	ptr2 = unsorted
+
+	loop
+
+		result = result + 1
+		
+		temp1 = *ptr1
+		temp2 = *ptr2
+		
+		
+		if temp1 < temp2
+			*ptr1 = temp2
+			*ptr2 = temp1
+		endif
+		
+		
+		j = j + 1
+		
+		temp2 = ptr2
+		temp2 = temp2 + 4
+		ptr2 = temp2
+		
+
+	while j < size
+
+	
+	j = 0
+	i = i + 1
+	
+	temp1 = ptr1
+	temp1 = temp1 + 4
+	ptr1 = temp1
+	
+	
+
+while i < size
+
+
+
+var convert_to_ascii = 1
+var space = 0x20
+var newline = 0x0a
+
+if convert_to_ascii == 1
+
+	i = 0
+	ptr1 = unsorted
+
+	loop
+
+		temp1 = *ptr1
+		temp1 = temp1 + 0x30
+		*ptr1 = temp1
+
+		syscall write(1, temp1, 4)
+
+		temp1 = ptr1
+		temp1 = temp1 + 4
+		ptr1 = temp1
+		
+		syscall write(1, space, 4)
+
+		i = i + 1
+
+	while i < size
+
+endif
+
+
+syscall write(1, newline, 4)
+
+syscall exit(1)

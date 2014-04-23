@@ -1,0 +1,24 @@
+string hw = "hello world\n"
+
+
+var a = 0x41
+var i = 0
+var j = 0
+
+loop
+	
+	loop
+		if j == 2
+
+			syscall write(1, a, 4)
+
+		endif
+
+		j = j + 1
+
+	while j < 5
+	j = 0
+	i = i + 1
+while i < 5
+
+syscall exit(1)

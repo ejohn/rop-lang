@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: distorm
+Version: 1.7.30
+Summary: :[diStorm64}:
+Home-page: http://ragestorm.net/distorm/
+Author: Mario Vilas
+Author-email: mvilas@gmail.com
+License: UNKNOWN
+Download-URL: http://ragestorm.net/distorm/
+Description: The ultimate disassembler library (for AMD64, X86-64)
+        by Gil Dabah (arkon@ragestorm.net)
+        
+        Python bindings by Mario Vilas (mvilas@gmail.com)
+Platform: cygwin
+Platform: win
+Platform: linux
+Platform: macosx
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.4
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Topic :: Software Development :: Disassemblers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires: ctypes
+Provides: distorm
